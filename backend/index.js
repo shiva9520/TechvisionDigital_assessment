@@ -11,17 +11,14 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-// Basic Route
+ 
 app.get('/', (req, res) => {
   res.send('Backend is running!');
 });
-
-// Routes
+ 
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 
-// Connect to MongoDB Atlas
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -34,7 +31,6 @@ mongoose.connect(MONGODB_URI)
   })
   .catch((err) => {
     console.error('Failed to connect to MongoDB:', err);
-    // Continue running app even if DB fails for demo purposes
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT} (without DB)`);
     });

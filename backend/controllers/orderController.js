@@ -1,8 +1,5 @@
 import Order from '../models/orderModel.js';
-
-// @desc    Create new order
-// @route   POST /api/orders
-// @access  Public
+ 
 export const createOrder = async (req, res) => {
   try {
     const { customerName, email, phone, address, productId, productName, amount } = req.body;

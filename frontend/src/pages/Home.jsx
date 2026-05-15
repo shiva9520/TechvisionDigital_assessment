@@ -27,7 +27,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="bg-primary-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
@@ -46,7 +45,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
@@ -75,7 +73,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Products Section */}
       <section id="products" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">Our Offerings</h2>
